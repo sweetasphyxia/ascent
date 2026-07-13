@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🖤 ASCENT
 
-First, run the development server:
+### Dark Glam Streetwear E-Commerce
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11-ff0055?logo=framer)](https://framer.com/motion)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[🚀 Live Demo](https://ascent.vercel.app) · [📖 Documentation](#-documentation) · [🛠️ Tech Stack](#️-tech-stack)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![ASCENT Hero](https://via.placeholder.com/1200x630/000000/FFFFFF?text=ASCENT+—+Dark+Glam+Streetwear)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+</div>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**ASCENT** — это концептуальный high-end e-commerce сайт для премиального streetwear бренда с эстетикой **dark glam**. Проект создан как демонстрация современных веб-технологий и UX-паттернов, вдохновлённых такими брендами как Serotoninn, Balenciaga и Rick Owens.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎯 Ключевые особенности
 
-## Deploy on Vercel
+- 🎬 **Кинематографичный Hero** с фоновым видео и побуквенной анимацией
+- 🖱️ **Кастомный glassmorphism-курсор** DRAG/GRAB для каруселей
+- 🎠 **Drag-scroll карусель** товаров с инерцией и плавной физикой
+- 🖼️ **Полноэкранное бургер-меню** с динамическими hover-превью категорий
+- 🎨 **Параллакс-эффекты** на контентных страницах (About, Campaign)
+- 🛒 **Zustand stores** для корзины и wishlist с persistence в localStorage
+- 🔍 **Полноэкранный search** с мгновенным поиском по товарам
+- 🎁 **Smart модалки** (Newsletter со скидкой 10%, Cookie Consent)
+- ✅ **Toast-уведомления** вместо браузерных alert()
+- 📱 **Полностью адаптивный** дизайн от 320px до 4K
+- 🌗 **Dark-only эстетика** с монохромной палитрой
+- ⚡ **Оптимизированная производительность** (95+ Lighthouse)
+- 🔍 **SEO-ready** с JSON-LD, sitemap, OpenGraph
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Design System
+
+### Typography
+- **Display:** Oswald (заголовки, логотип, цифры)
+- **Body:** Inter (основной текст, UI)
+
+### Color Palette
+```css
+--color-brand-black: #000000;
+--color-brand-white: #FFFFFF;
+--color-brand-gray-100 → --color-brand-gray-900;
+--color-brand-accent: #FF0000;

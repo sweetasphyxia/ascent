@@ -1,65 +1,80 @@
-import Image from "next/image";
+import { Hero } from '@/components/home/Hero'
+import { ProductCarousel } from '@/components/product/ProductCarousel'
+import { Container, Heading, Text, Divider, Button } from '@/components/ui'
+import { products } from '@/data/products'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    <>
+      {/* === HERO === */}
+      <Hero />
+
+      {/* === NEW ARRIVALS (drag-carousel) === */}
+      <section className="relative py-20 md:py-32 bg-brand-black">
+        <Container size="xl" className="mb-10 md:mb-16">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+              <Text variant="eyebrow" className="mb-4">
+                New Arrivals
+              </Text>
+              <Heading level={2}>
+                LATEST
+                <br />
+                <span className="text-stroke-white">DROPS</span>
+              </Heading>
+            </div>
+
+            <Link href="/catalog?filter=new">
+              <Button variant="outline" size="lg">
+                View All
+              </Button>
+            </Link>
+          </div>
+        </Container>
+
+        {/* Карусель во всю ширину экрана */}
+        <ProductCarousel products={products} />
+      </section>
+
+      <Divider variant="fade" />
+
+      {/* === МАНИФЕСТ === */}
+      <section className="relative py-32 md:py-48 bg-brand-black">
+        <Container size="lg" className="text-center">
+          <Text variant="eyebrow" className="mb-6">
+            Fall / Winter 2026
+          </Text>
+          <Heading level={2} className="mb-8">
+            NEW SEASON
+            <br />
+            <span className="text-stroke-white">NEW SILENCES</span>
+          </Heading>
+          <Text variant="body" className="max-w-2xl mx-auto">
+            Каждая вещь — это манифест. Каждая деталь — это вызов.
+            Мы создаём одежду для тех, кто понимает: настоящий стиль
+            рождается не в свете софитов, а в темноте переулков.
+          </Text>
+        </Container>
+      </section>
+
+      <Divider variant="fade" />
+
+      {/* === ФИЛОСОФИЯ === */}
+      <section className="relative py-32 md:py-48 bg-brand-black">
+        <Container size="md" className="text-center">
+          <Heading level={2} stroke className="mb-12">
+            MANIFESTO
+          </Heading>
+          <Text variant="large" className="max-w-3xl mx-auto leading-relaxed">
+            ASCENT — это не бренд. Это состояние.
+            <br /><br />
+            Мы верим, что одежда должна быть тишиной посреди шума,
+            формой посреди хаоса, восхождением посреди равнины.
+            Мы не следуем трендам — мы задаём высоту.
+          </Text>
+        </Container>
+      </section>
+    </>
+  )
 }
