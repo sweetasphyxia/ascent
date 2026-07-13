@@ -63,13 +63,12 @@ export function CartDrawer() {
               ease: [0.32, 0.72, 0, 1],
             }}
             className="fixed top-0 right-0 bottom-0 z-[80] w-full max-w-md bg-brand-black border-l border-brand-gray-800 flex flex-col"
-            aria-labelledby="cart-drawer-title"
           >
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-5 border-b border-brand-gray-800">
               <div className="flex items-center gap-3">
                 <ShoppingBag className="h-5 w-5 text-brand-white" strokeWidth={1.5} />
-                <Heading as="h2" level={4} id="cart-drawer-title">
+                <Heading as="h2" level={4}>
                   Cart ({totalItems})
                 </Heading>
               </div>
