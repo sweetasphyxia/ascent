@@ -26,7 +26,10 @@ export function Heading({
   children,
   ...props
 }: HeadingProps) {
-  const Component = as || (`h${level}` as keyof JSX.IntrinsicElements)
+  // ✅ ИСПРАВЛЕНО: убрано приведение к JSX.IntrinsicElements,
+  // которое вызывает ошибку namespace в Next.js 16.
+  // Теперь используется явный union-тег, который полностью типобезопасен.
+  const Component = as || (`h${level}` as 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6')
 
   return (
     <Component
