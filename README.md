@@ -9,7 +9,7 @@
 [![Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com)
 [![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11-ff0055?logo=framer)](https://framer.com/motion)
 
-[🚀 Live Demo](https://ascent.vercel.app) · [📖 Documentation](#-documentation) · [🛠️ Tech Stack](#️-tech-stack)
+ · [📖 Documentation](#-documentation) · [🛠️ Tech Stack](#️-tech-stack)
 
 ![ASCENT Hero](https://via.placeholder.com/1200x630/000000/FFFFFF?text=ASCENT+—+Dark+Glam+Streetwear)
 
