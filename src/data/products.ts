@@ -27,7 +27,7 @@ export interface Product {
 
 /**
  * Мок-данные товаров ASCENT.
- * Изображения с реальными фото из Spin4Spin.
+ * Изображения с реальными фото Enfants Riches Deprimes.
  */
 export const products: Product[] = [
   {
@@ -54,10 +54,11 @@ export const products: Product[] = [
       'Не сушить в машине',
     ],
     images: {
-      front: 'https://server.spin4spin.com/media/images/2000000483375/02a1d978b956265143fb5c8c7438d8bc.jpg',
-      back: 'https://server.spin4spin.com/media/images/2000000483375/02a1d978b956265143fb5c8c7438d8bc.jpg',
+      front: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80',
+      back: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
       gallery: [
-        'https://server.spin4spin.com/media/images/2000000483375/02a1d978b956265143fb5c8c7438d8bc.jpg',
+        'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80',
+        'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
       ],
     },
     sizes: ['S', 'M', 'L', 'XL'],
@@ -71,7 +72,7 @@ export const products: Product[] = [
     price: 330000,
     color: 'Navy',
     description:
-      'Темно-синяя куртка Enfants Riches Deprimes с конструктивистским дизайном. Премиальный хлопок, идеальна для охотничьего стиля.',
+      'Тёмно-синяя куртка Enfants Riches Deprimes с конструктивистским дизайном. Премиальный хлопок, идеальна для охотничьего стиля.',
     details: [
       'Hunting style',
       'Конструктивистский дизайн',
@@ -87,10 +88,10 @@ export const products: Product[] = [
       'Не сушить в машине',
     ],
     images: {
-      front: 'https://server.spin4spin.com/media/images/2000000483313/2894ea62697fa054feae47f9212f75ef.jpg',
-      back: 'https://server.spin4spin.com/media/images/2000000483313/2894ea62697fa054feae47f9212f75ef.jpg',
+      front: 'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
+      back: 'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
       gallery: [
-        'https://server.spin4spin.com/media/images/2000000483313/2894ea62697fa054feae47f9212f75ef.jpg',
+        'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
       ],
     },
     sizes: ['S', 'M', 'L', 'XL'],
