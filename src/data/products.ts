@@ -54,11 +54,10 @@ export const products: Product[] = [
       'Не сушить в машине',
     ],
     images: {
-      front: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
+      front: 'https://i.imgur.com/64937aO.jpg',
+      back: 'https://i.imgur.com/64937aO.jpg',
       gallery: [
-        'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80',
-        'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
+        'https://i.imgur.com/64937aO.jpg',
       ],
     },
     sizes: ['S', 'M', 'L', 'XL'],
@@ -88,10 +87,10 @@ export const products: Product[] = [
       'Не сушить в машине',
     ],
     images: {
-      front: 'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
-      back: 'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
+      front: 'https://i.imgur.com/TmmjfEs.jpg',
+      back: 'https://i.imgur.com/TmmjfEs.jpg',
       gallery: [
-        'https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=800&q=80',
+        'https://i.imgur.com/TmmjfEs.jpg',
       ],
     },
     sizes: ['S', 'M', 'L', 'XL'],
